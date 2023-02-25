@@ -1,0 +1,256 @@
+2023-02-25 18:07:44.459  INFO 17112 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 17112 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:07:44.462 DEBUG 17112 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:07:44.463  INFO 17112 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:07:47.020  WARN 17112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:07:47.721  INFO 17112 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.632 seconds (JVM running for 4.585)
+2023-02-25 18:07:47.725  INFO 17112 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Starting
+2023-02-25 18:08:27.863  WARN 17112 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:08:34.876  INFO 29172 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 29172 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:08:34.877 DEBUG 29172 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:08:34.878  INFO 29172 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:08:37.432  WARN 29172 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:08:38.148  INFO 29172 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.705 seconds (JVM running for 4.864)
+2023-02-25 18:08:38.151  INFO 29172 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:09:11.847  WARN 29172 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:11:25.586  INFO 3888 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 3888 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:11:25.588 DEBUG 3888 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:11:25.589  INFO 3888 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:11:28.167  WARN 3888 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:11:28.831  INFO 3888 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.655 seconds (JVM running for 4.531)
+2023-02-25 18:11:28.835  INFO 3888 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:13:41.714 ERROR 3888 --- [http-nio-8090-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.modelmapper.MappingException: ModelMapper mapping errors:
+
+1) Failed to instantiate instance of destination com.restapi.rewards.dto.CustomerResponseDto. Ensure that com.restapi.rewards.dto.CustomerResponseDto has a non-private no-argument constructor.
+
+1 error] with root cause
+
+java.lang.NoSuchMethodException: com.restapi.rewards.dto.CustomerResponseDto.<init>()
+	at java.base/java.lang.Class.getConstructor0(Class.java:3585) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructor(Class.java:2754) ~[na:na]
+	at org.modelmapper.internal.MappingEngineImpl.instantiate(MappingEngineImpl.java:336) ~[modelmapper-3.1.0.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.createDestination(MappingEngineImpl.java:351) ~[modelmapper-3.1.0.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.typeMap(MappingEngineImpl.java:140) ~[modelmapper-3.1.0.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:114) ~[modelmapper-3.1.0.jar:na]
+	at org.modelmapper.internal.MappingEngineImpl.map(MappingEngineImpl.java:71) ~[modelmapper-3.1.0.jar:na]
+	at org.modelmapper.ModelMapper.mapInternal(ModelMapper.java:573) ~[modelmapper-3.1.0.jar:na]
+	at org.modelmapper.ModelMapper.map(ModelMapper.java:406) ~[modelmapper-3.1.0.jar:na]
+	at com.restapi.rewards.service.impl.CustomerServiceImplementation.lambda$findAllCustomers$0(CustomerServiceImplementation.java:33) ~[classes/:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[na:na]
+	at com.restapi.rewards.service.impl.CustomerServiceImplementation.findAllCustomers(CustomerServiceImplementation.java:33) ~[classes/:na]
+	at com.restapi.rewards.service.impl.CustomerServiceImplementation$$FastClassBySpringCGLIB$$e67ac5b3.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.23.jar:5.3.23]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.23.jar:5.3.23]
+	at com.restapi.rewards.service.impl.CustomerServiceImplementation$$EnhancerBySpringCGLIB$$c5898c7e.findAllCustomers(<generated>) ~[classes/:na]
+	at com.restapi.rewards.controller.CustomerController.getAllCustomer(CustomerController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.23.jar:5.3.23]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.23.jar:5.3.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-25 18:15:03.394  WARN 3888 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:15:09.102  INFO 31388 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 31388 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:15:09.103 DEBUG 31388 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:15:09.104  INFO 31388 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:15:12.147  WARN 31388 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:15:12.945  INFO 31388 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 4.271 seconds (JVM running for 5.226)
+2023-02-25 18:15:12.949  INFO 31388 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:22:34.056 ERROR 31388 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.endStatement(SessionLocal.java:1693) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:227) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-25 18:22:34.265  WARN 31388 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:22:39.978  INFO 14460 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 14460 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:22:39.979 DEBUG 14460 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:22:39.981  INFO 14460 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:22:42.830  WARN 14460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:22:43.568  INFO 14460 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.967 seconds (JVM running for 4.923)
+2023-02-25 18:22:43.572  INFO 14460 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:23:14.098  WARN 14460 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:23:19.899  INFO 29936 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 29936 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:23:19.901 DEBUG 29936 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:23:19.901  INFO 29936 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:23:22.553  WARN 29936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:23:23.195  INFO 29936 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.697 seconds (JVM running for 4.652)
+2023-02-25 18:23:23.199  INFO 29936 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:24:50.442  WARN 29936 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:24:56.809  INFO 11512 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 11512 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:24:56.811 DEBUG 11512 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Running with Spring Boot v2.7.4, Spring v5.3.23
+2023-02-25 18:24:56.811  INFO 11512 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:24:59.643  WARN 11512 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:25:00.373  INFO 11512 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 4.006 seconds (JVM running for 5.047)
+2023-02-25 18:25:00.380  INFO 11512 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:44:18.941  WARN 11512 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:44:23.438  INFO 32708 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 32708 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:44:23.439  INFO 32708 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:44:23.491  INFO 32708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-25 18:44:23.491  INFO 32708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-25 18:44:24.165  INFO 32708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-25 18:44:24.213  INFO 32708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-02-25 18:44:24.682  INFO 32708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-02-25 18:44:24.689  INFO 32708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-25 18:44:24.689  INFO 32708 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-25 18:44:24.752  INFO 32708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-25 18:44:24.752  INFO 32708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1260 ms
+2023-02-25 18:44:24.860  INFO 32708 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:~/rewards_db'
+2023-02-25 18:44:25.632  INFO 32708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-25 18:44:26.073  WARN 32708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:44:26.700  INFO 32708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-25 18:44:26.737  INFO 32708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-02-25 18:44:26.749  INFO 32708 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.708 seconds (JVM running for 4.793)
+2023-02-25 18:44:26.753  INFO 32708 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:47:38.161  INFO 32708 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-25 18:47:38.358 ERROR 32708 --- [HikariPool-1 connection adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Error thrown while acquiring connection from data source
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: The database is open in exclusive mode; can not open additional connections [90135-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.message.DbException.get(DbException.java:188) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.checkSuspended(SessionLocal.java:1240) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.transitionToState(SessionLocal.java:1232) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.setCurrentCommand(SessionLocal.java:1210) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.engine.SessionLocal.startStatementWithinTransaction(SessionLocal.java:1658) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.command.Command.executeQuery(Command.java:184) ~[h2-2.1.214.jar:2.1.214]
+	at org.h2.jdbc.JdbcConnection.isReadOnly(JdbcConnection.java:538) ~[h2-2.1.214.jar:2.1.214]
+	at com.zaxxer.hikari.pool.PoolBase.setupConnection(PoolBase.java:408) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.access$100(HikariPool.java:71) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:726) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712) ~[HikariCP-4.0.3.jar:na]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2023-02-25 18:47:38.570  WARN 32708 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:47:45.516  INFO 28632 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 28632 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:47:45.518  INFO 28632 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:47:45.570  INFO 28632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-25 18:47:45.570  INFO 28632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-25 18:47:46.463  INFO 28632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-25 18:47:46.528  INFO 28632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2023-02-25 18:47:47.114  INFO 28632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-02-25 18:47:47.121  INFO 28632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-25 18:47:47.121  INFO 28632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-25 18:47:47.195  INFO 28632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-25 18:47:47.195  INFO 28632 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1625 ms
+2023-02-25 18:47:47.310  INFO 28632 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:~/rewards_db'
+2023-02-25 18:47:48.138  INFO 28632 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-25 18:47:48.595  WARN 28632 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:47:49.213  INFO 28632 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-25 18:47:49.249  INFO 28632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-02-25 18:47:49.261  INFO 28632 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 4.212 seconds (JVM running for 5.318)
+2023-02-25 18:47:49.265  INFO 28632 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:47:54.386  INFO 28632 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-25 18:47:54.386  INFO 28632 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-25 18:47:54.387  INFO 28632 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-25 18:47:55.400  INFO 28632 --- [http-nio-8090-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 421 ms
+2023-02-25 18:50:52.143  INFO 28632 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-25 18:50:52.540  WARN 28632 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-25 18:50:57.907  INFO 33952 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Starting RewardsApplication using Java 17.0.4.1 on HP-RIDER-707 with PID 33952 (D:\springboot Dev\codings\rewards\target\classes started by fshah in D:\springboot Dev\codings\rewards)
+2023-02-25 18:50:57.910  INFO 33952 --- [restartedMain] com.restapi.rewards.RewardsApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-02-25 18:50:57.968  INFO 33952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-25 18:50:57.969  INFO 33952 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-25 18:50:58.672  INFO 33952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-25 18:50:58.721  INFO 33952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 2 JPA repository interfaces.
+2023-02-25 18:50:59.256  INFO 33952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2023-02-25 18:50:59.263  INFO 33952 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-25 18:50:59.264  INFO 33952 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2023-02-25 18:50:59.337  INFO 33952 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-25 18:50:59.338  INFO 33952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1369 ms
+2023-02-25 18:50:59.461  INFO 33952 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:~/rewards_db'
+2023-02-25 18:51:00.291  INFO 33952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-25 18:51:00.732  WARN 33952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-25 18:51:01.331  INFO 33952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-02-25 18:51:01.367  INFO 33952 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+2023-02-25 18:51:01.378  INFO 33952 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Started RewardsApplication in 3.88 seconds (JVM running for 4.777)
+2023-02-25 18:51:01.382  INFO 33952 --- [restartedMain] com.restapi.rewards.RewardsApplication   : Application is Started
+2023-02-25 18:51:05.222  INFO 33952 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-25 18:51:05.222  INFO 33952 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-25 18:51:05.224  INFO 33952 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-25 18:51:06.073  INFO 33952 --- [http-nio-8090-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 292 ms
+2023-02-25 18:51:50.281  INFO 33952 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-25 18:51:50.674  WARN 33952 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
