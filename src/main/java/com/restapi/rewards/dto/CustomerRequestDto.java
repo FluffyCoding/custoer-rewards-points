@@ -1,7 +1,10 @@
 package com.restapi.rewards.dto;
 
 import com.restapi.rewards.entity.Customer;
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
@@ -12,14 +15,19 @@ import java.io.Serializable;
  * A DTO for the {@link Customer} entity
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class CustomerRequestDto implements Serializable {
-    @Size(min = 10, max = 50, message = "first name should be at least 10 and less than 50 character")
+    @Size(min = 3, max = 50, message = "first name should be at least 10 and less than 50 character")
     @NotNull
-    private final String firstName;
-    @Size(min = 10, max = 50, message = "last name should be at least 10 and less than 50 character")
+    @Schema(description = "Customer First Name", example = "Faisal")
+    private String firstName;
+    @Size(min = 3, max = 50, message = "last name should be at least 10 and less than 50 character")
     @NotNull
-    private final String lastName;
+    @Schema(description = "Customer Last Name", example = "Shahzad")
+    private String lastName;
     @Size(max = 50)
     @Email(message = "should be a valid email address")
-    private final String email;
+    @Schema(description = "Customer Email Address", example = "f.shahzad@hotmail.com")
+    private String email;
 }

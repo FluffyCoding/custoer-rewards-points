@@ -1,5 +1,6 @@
 package com.restapi.rewards.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -20,14 +21,17 @@ import java.time.LocalDate;
 @Builder
 public class TransactionRequestDto {
 
+    @Schema(description = "amount value", example = "250.00")
     @Min(value = 1, message = "Transaction Value should be min 1 ")
     private BigDecimal transactionAmount;
 
     @NotNull
+    @Schema(description = "Customer Id", example = "2")
     private Long customerId;
 
     @FutureOrPresent
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+    @Schema(description = "Date", example = "2023-01-01")
     private LocalDate transactionDate;
 
 }

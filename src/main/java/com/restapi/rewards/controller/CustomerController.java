@@ -6,6 +6,7 @@ import com.restapi.rewards.dto.CustomerUpdateRequestDto;
 import com.restapi.rewards.dto.RewardPointsResponseDto;
 import com.restapi.rewards.service.CustomerService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -31,6 +32,7 @@ public class CustomerController {
     public ResponseEntity<List<CustomerResponseDto>> getAllCustomer() {
         return ResponseEntity.ok(customerService.findAllCustomers());
     }
+
     @Operation(summary = "save new customer", description = "This endpoint save customer")
     @PostMapping("/")
     public ResponseEntity<CustomerResponseDto> saveNewCustomer(@Valid @RequestBody CustomerRequestDto customerRequestDto) {
@@ -52,9 +54,9 @@ public class CustomerController {
 
     @Operation(summary = "Get Total Reward Points Of Selected Customer By Date", description = "This Endpoint Returns Total Reward Points of Selected Customer")
     @GetMapping("/points")
-    public ResponseEntity<RewardPointsResponseDto> collectRewardPoints(@RequestParam Long customerId,
-                                                                       @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
-                                                                       @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate) {
+    public ResponseEntity<RewardPointsResponseDto> collectRewardPoints(@Parameter(description = "Customer Id", example = "2") @RequestParam Long customerId,
+                                                                       @Parameter(description = "Start Date", example = "2023-01-01") @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
+                                                                       @Parameter(description = "End Date", example = "2023-04-01") @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate) {
         var customerRewardPoints = customerService.getCustomerRewardPoints(customerId, startDate, endDate);
         return ResponseEntity.ok(customerRewardPoints);
     }

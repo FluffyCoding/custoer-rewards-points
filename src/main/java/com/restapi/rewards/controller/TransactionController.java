@@ -6,6 +6,8 @@ import com.restapi.rewards.dto.TransactionRequestDto;
 import com.restapi.rewards.dto.TransactionResponseDto;
 import com.restapi.rewards.service.TransactionService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.Parameters;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -41,9 +43,10 @@ public class TransactionController {
 
     @Operation(summary = "find all associated transaction with customer against email", description = "This endpoint returns all transaction")
     @GetMapping("/email")
-    public ResponseEntity<List<TransactionResponseDto>> getAllTransactionByEmail(@RequestParam String email) {
+    public ResponseEntity<List<TransactionResponseDto>> getAllTransactionByEmail(@Parameter(description = "Customer Email",example = "f.shahzad@hotmail.com") @RequestParam String email) {
         return ResponseEntity.ok(transactionService.findTransactionByEmail(email));
     }
+
     @Operation(summary = "find all associated transaction with customer against id", description = "This endpoint returns all transaction")
     @GetMapping("/id")
     public ResponseEntity<List<TransactionResponseDto>> getAllTransactionByCustomerIdWithDates(RewardPointsByCustomerDto customerDto) {
@@ -52,8 +55,8 @@ public class TransactionController {
 
     @Operation(summary = "Get Total Reward Points Of Each Customer By Date", description = "This Endpoint Returns Total Reward Points of each Customer")
     @GetMapping("/summary")
-    public ResponseEntity<List<CustomersTransactionSummryDto>> getTransactionSummary(@NotNull @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
-                                                                                     @NotNull @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate) {
+    public ResponseEntity<List<CustomersTransactionSummryDto>> getTransactionSummary(@Parameter(description = "Start Date", example = "2023-01-01") @NotNull @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate startDate,
+                                                                                     @Parameter(description = "End Date", example = "2023-04-01")@NotNull @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate endDate) {
         return ResponseEntity.ok(transactionService.transactionSummry(startDate, endDate));
     }
 
